@@ -14,9 +14,3 @@ def sockMerchant(n, ar):
 
     return pairs
 
-#para visual
-n = int(input("Introduce el número de calcetines: "))
-ar = list(map(int, input("Introduce los colores separados por espacio: ").split()))
-
-resultado = sockMerchant(n, ar)
-print(f"Número de pares: {resultado}")
