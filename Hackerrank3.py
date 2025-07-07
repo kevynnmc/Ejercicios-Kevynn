@@ -1,6 +1,6 @@
 #para hackerram
-def pageCount(n, p):
-    from_front = p // 2
-    from_back = (n // 2) - (p // 2)
+def pageCount(numero, pagina):
+    from_front = pagina // 2
+    from_back = (numero // 2) - (pagina // 2)
     return min(from_front, from_back)
 
