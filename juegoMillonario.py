@@ -1,5 +1,4 @@
 import random
-
 preguntas = {
     1:[
         {'pregunta':'¿Cuál es el continente donde se encuentra Egipto?',
@@ -164,7 +163,6 @@ preguntas = {
 }
 
 import random
-
 comodines_usados = []
 
 def usar_5050(pregunta):
@@ -172,7 +170,7 @@ def usar_5050(pregunta):
     opciones = ['a', 'b', 'c', 'd']
     eliminar = random.sample([o for o in opciones if o != correcta], 2)
     return [op for op in pregunta['opciones'] if op[0] not in eliminar]
-
+    
 def llamada_amigo(pregunta):
     correcta = pregunta['respuesta']
     if random.random() < 0.8:
@@ -231,12 +229,9 @@ def jugar():
                         print(llamada_amigo(pregunta))
                     else:
                         print(consulta_publico(pregunta))
-
                 else:
                     print("Intenta nuevamente.")
     print(f"Felicidades! Tu puntaje total fue: {puntos}")
-
-
 jugar()
 
 
