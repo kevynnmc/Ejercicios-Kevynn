@@ -15,9 +15,3 @@ def contarValles(pasos, ruta):
 
     return valles
 
-#para visual
-pasos = int(input("Ingrese el número total de pasos: "))
-ruta = input("Ingrese la ruta (use 'U' para subir y 'D' para bajar): ").strip().upper()
-
-resultado = contarValles(pasos, ruta)
-print(f"Cantidad de valles recorridos: {resultado}")
