@@ -1,4 +1,4 @@
-asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+asignaturas = ["matematicas", "fisica", "quimica", "sociales", "castellano"]
 repetir = []
 
 print("Vamos a revisar tus notas del curso.")
