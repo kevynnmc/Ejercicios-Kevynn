@@ -13,8 +13,3 @@ def dayOfProgrammer(year):
         else:
             return f"13.09.{year}"
 
-# pedir el año 
-año = int(input("Ingresa el año: "))
-# resultado
-print(dayOfProgrammer(año))
-
