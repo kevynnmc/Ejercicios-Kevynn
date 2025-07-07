@@ -90,15 +90,13 @@ while nivel_actual <= 10:
                 print("Por favor, ingresa un número válido.")
                 continue
 
-            if eleccion == 1 and "1.llama a un amigo" in comodines:
-                # Llamada a un amigo (elige aleatoriamente entre opción A o respuesta correcta)
+            if eleccion == 1 and "1.llama a un amigo" in comodines
                 llamada = [pregunta['opciones'][0], pregunta['respuesta']]
                 amigo = random.choice(llamada)
                 print(f"Tu amigo recomienda la opción: {amigo}")
                 comodines.remove("1.llama a un amigo")
 
             elif eleccion == 2 and "2.50/50" in comodines:
-                # Mostrar solo una opción correcta y una incorrecta
                 correcta = pregunta['respuesta'][0]
                 opciones = ['a', 'b', 'c', 'd']
                 eliminar = random.sample([o for o in opciones if o != correcta], 2)
@@ -109,7 +107,7 @@ while nivel_actual <= 10:
                 comodines.remove("2.50/50")
 
             elif eleccion == 3 and "3.cambio de pregunta" in comodines:
-                # Cambiar pregunta
+                # Cambia pregunta
                 if indice_pregunta + 1 < len(preguntas[nivel_actual]):
                     indice_pregunta += 1
                     pregunta = preguntas[nivel_actual][indice_pregunta]
@@ -119,7 +117,6 @@ while nivel_actual <= 10:
                     comodines.remove("3.cambio de pregunta")
                 else:
                     print("No hay otra pregunta para cambiar en este nivel.")
-
             else:
                 print("No tienes ese comodín disponible o número inválido.")
 
