@@ -141,6 +141,3 @@ while nivel_actual <= 10:
         print("RESPUESTA INCORRECTA.")
         print(f"Perdiste. Tu dinero acumulado fue: ${dinero}. ¡Gracias por jugar!")
         break
-
-
-
