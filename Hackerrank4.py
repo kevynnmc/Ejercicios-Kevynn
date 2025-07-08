@@ -1,6 +1,5 @@
 #para hackerram
 def contarValles(pasos, ruta):
-    nivel_mar = 0
     altitud = 0
     valles = 0
 
