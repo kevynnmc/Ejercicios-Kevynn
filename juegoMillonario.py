@@ -90,7 +90,7 @@ while nivel_actual <= 10:
                 print("Por favor, ingresa un número válido.")
                 continue
 
-            if eleccion == 1 and "1.llama a un amigo" in comodines
+            if eleccion == 1 and "1.llama a un amigo" in comodines:
                 llamada = [pregunta['opciones'][0], pregunta['respuesta']]
                 amigo = random.choice(llamada)
                 print(f"Tu amigo recomienda la opción: {amigo}")
